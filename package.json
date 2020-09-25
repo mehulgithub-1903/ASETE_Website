@@ -1,0 +1,29 @@
+{
+  "name": "asete_website",
+  "version": "1.0.0",
+  "description": "A Website for ASETE, IIEST Shibpur.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheelranjan/ASETE_Website.git"
+  },
+  "author": "Sheel_Ranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheelranjan/ASETE_Website/issues"
+  },
+  "homepage": "https://github.com/sheelranjan/ASETE_Website#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^1.12.4",
+    "popper.js": "^1.16.1"
+  }
+}
