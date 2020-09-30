@@ -1,9 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 h2,
 p {
   margin: 30px 0 0;
@@ -12,6 +6,10 @@ p {
 
 p {
   color: #18c495;
+}
+
+.roundImg {
+  border-radius: 50%;
 }
 
 .slider {
@@ -86,10 +84,6 @@ p {
 
 .slick-dots button {
   display: none;
-}
-
-.slick-slide:nth-child(odd) {
-  /* background: blue;*/
 }
 
 .slick-slide {
