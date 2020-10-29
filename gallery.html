@@ -17,49 +17,50 @@
   <link rel="stylesheet" href="./styles/gallery.css">
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/galHead.css">
- 
+  <script src="./scripts/nav.js"></script>
   <script src="https://kit.fontawesome.com/7a5c139279.js" crossorigin="anonymous"></script>
-  <script src="./scripts/lightbox.js"></script>
+  <!-- <script src="scripts/nav.js"></script> -->
+   
+    
   <title>
       ASETE@Gallery
   </title>
   
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark col-12" >
-      <!-- Brand/logo -->
-      <a class="navbar-brand my-0 py-0" href="#">
-        <img src="images/logo_white.png" alt="logo" style="width:200px;">
-      </a>
-      <button class="navbar-toggler" type="button" 
-      data-toggle="collapse" data-target="#collapsibleNavbar">
+  <nav class="navbar navbar-light navbar-expand-sm fixed-top"  style="background-color: transparent;" id="topNav">
+    <a class="navbar-brand my-0 py-0 mr-auto" href="#"><img src="./images/Logo.png" id="logo" width="150px" alt="ASETE Logo"></a>
+    <button class="navbar-toggler fixed" type="button" data-toggle="collapse" data-target="#Navmenu">
         <span class="navbar-toggler-icon"></span>
-      </button> 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    </button>
+    <div class="collapse navbar-collapse" id="Navmenu">
         <ul class="navbar-nav nav-pills ml-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item active"><a class="nav-link" href="./gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Activities.html">Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item active"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
         </ul>
-      </div>
-    </nav>
-  </header>
-  <section>
-    <div id="header" class="col-12 col-md-10 my-5">
-      <a href="/" id="logo">GALLERY</a>
-      <ul id="menu">
-        <li><a href="/"><span>FRESHERS</span></a></li>
-        <li><a href="/"><span>FAREWELL</span></a></li>
-        <li><a href="/"><span>Teachers's Day</span></a></li>
-        <li><a href="/"><span>VAIDYUTAK</span></a></li>
-        
-      </ul>
     </div>
+</nav>
+  
+  <section>
+   <div class="container">
+    <div class="row">
+      <div id="header" style="text-align: center;" class="col-12 col-sm-12 my-5">
+        <a href="/"  id="logo">GALLERY</a>
+        <ul id="menu">
+          <li><a href="/"><span>FRESHERS</span></a></li>
+          <li><a href="/"><span>FAREWELL</span></a></li>
+          <li><a href="/"><span>Teachers's Day</span></a></li>
+          <li><a href="/"><span>VAIDYUTAK</span></a></li>
+          
+        </ul>
+      </div>   
+    
+    </div>  
+  </div>
   </section>
 <section>
   <div class="container container1 shadow">
@@ -258,17 +259,6 @@
 </section>
 
 
-
-
-
-  
-    
-    
-    
-   
-      
-    
-   
 </body>
 
 </html>

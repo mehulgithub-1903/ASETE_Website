@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/Activities.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     
-   
+   <script src="./scripts/nav.js-"></script>
     <script src="https://kit.fontawesome.com/7a5c139279.js" crossorigin="anonymous"></script>
    
     <title>
@@ -27,33 +27,28 @@
 </head>
 <body>  
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark col-12" >
-          <!-- Brand/logo -->
-          <a class="navbar-brand my-0 py-0" href="#">
-            <img src="images/logo_white.png" alt="logo" style="width:200px;">
-          </a>
-          <button class="navbar-toggler" type="button" 
-          data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button> 
-          <!-- Links -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="topNav">
+        <a class="navbar-brand my-0 py-0 mr-auto" href="#"><img src="./images/logo_white.png" id="logo" width="150px" alt="ASETE Logo"></a>
+        <button class="navbar-toggler fixed" type="button" data-toggle="collapse" data-target="#Navmenu">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="Navmenu">
             <ul class="navbar-nav nav-pills ml-auto">
-              <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-              <li class="nav-item "><a class="nav-link" href="./gallery.html">Gallery</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#activities">Activities</a></li>
-              <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./Activities.html">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
             </ul>
-          </div>
-        </nav>
+        </div>
+    </nav>
       </header>  
       <div class="container py-5">
            <!-- For demo purpose -->
     <div class="row mb-5">
-        <div class="col-lg-8 text-white py-4 text-center mx-auto">
-          <h1 class="display-4" style=" text-align:center; font-size: 95px;">ACTIVITES@ETC</h1>
+        <div class="col-sm-8 text-white py-4 text-center mx-auto">
+          <h1 class="display-4" style=" text-shadow: 3px 3px 2px red;">ACTIVITES@ETC</h1>
           <p class="lead mb-0" style=" text-shadow: 3px 3px 4px blue;"><i>CUSTOMS THAT ENTANGLES YOU TO YOUR MATES & TEACHERS <br> HELPS YOU EXPLORE YOUR WILL!</i></p>
           
         </div>
@@ -117,6 +112,7 @@
         </div>
         <!-- End rounded tabs -->
       </div>
+      
       </div>
       <footer class="p-4" id="footerTop">
         <!-- Footer Links -->
@@ -188,6 +184,17 @@
           </div>
       </div>
     </div> 
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("topNav").style.backgroundColor = "rgb(0, 0, 0)";
+          }else{
+            document.getElementById("topNav").style.backgroundColor = "transparent";
+          }
+      }
+  </script>
 </body>
 
 </html>

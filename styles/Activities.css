@@ -1,7 +1,4 @@
-.nav-item {
-    font-size:120% ;
-    font-weight: bold;
-}
+
 @media (min-width: 576px) {
     .rounded-nav {
       border-radius: 50rem !important;

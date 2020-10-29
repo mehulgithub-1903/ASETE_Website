@@ -31,10 +31,7 @@ margin: 40 auto;
 box-shadow: 10px 10px 5px grey;
 
 }
-.nav-item {
-    font-size:120% ;
-    font-weight: bold;
-}
+
 #header{
     width: max-content;
     margin: 0 auto;
